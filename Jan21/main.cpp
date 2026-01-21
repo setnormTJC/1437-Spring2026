@@ -16,5 +16,8 @@ int main()
 
     //auto means "automatically" figure out the correct data type 
     printStudentNames(listOfStudents); 
+
+    
+    logPresentStudentsToOutputFile(listOfStudents, "outfile.txt");
     
 }

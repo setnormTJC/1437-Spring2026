@@ -8,3 +8,5 @@
 std::vector<std::string> readStudentNamesFromFile(std::string filename);
 
 void printStudentNames(const std::vector<std::string>& studentNames); //abstraction
+
+void logPresentStudentsToOutputFile(std::vector<std::string> studentNames, std::string outfileName);
