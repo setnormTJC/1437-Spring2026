@@ -4,4 +4,6 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="Jan21/Jan21.vcxproj" Id="b7185654-1aab-4263-b815-c9123a6609fe" />
+  <Project Path="Simple example of STRUCTURES/Simple example of STRUCTURES.vcxproj" Id="d8ad5122-0d18-40b6-9e2e-a40a4810b20a" />
+  <Project Path="Volleyball analytics/Volleyball analytics.vcxproj" Id="e0e9fc9c-e9de-454a-87dc-3fd7be566417" />
 </Solution>
