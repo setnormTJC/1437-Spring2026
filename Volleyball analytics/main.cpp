@@ -13,10 +13,15 @@ int main()
 
     std::string filename = "someVolleyballStats.csv";
 
+
+    
+
     //printVolleyballFileContents(filename);
 
     auto volleyballRecords = getVolleyBallRecordsFromFile(filename); 
 
+
+    std::cout << volleyballRecords[0].playerName << "\n";
 
     //std::cout << "Hello World!\n";
 }

@@ -47,8 +47,5 @@ std::vector<VolleyballRecord> getVolleyBallRecordsFromFile(std::string filename)
 	}
 	//while (std::getline(fin, currentToken, ',')) //an alternative approach
 
-	volleyBallRecords.pop_back(); //BAD BOY!
-
-
 	return volleyBallRecords; 
 }
