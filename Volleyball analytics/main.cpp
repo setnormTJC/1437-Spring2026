@@ -24,6 +24,15 @@ int main()
 
 
     //calc avg height: 
-    for (int i = 0; i < )
+    float sumOfAllHeights = 0.0; 
+
+    for (int i = 0; i < volleyballRecords.size(); ++i)
+    {
+        int heightOfCurrentPlayer = volleyballRecords[i].height;
+        sumOfAllHeights += heightOfCurrentPlayer; 
+    }
+
+    float averageHeight = sumOfAllHeights / volleyballRecords.size(); 
+    std::cout << "Average height = " << averageHeight << "\n";//SANITY CHECK: should NOT be 10000000000 inches
 }
 

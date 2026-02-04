@@ -54,17 +54,18 @@ void printVolleyballRecords(std::vector<VolleyballRecord> volleyballRecords)
 {
 
 	const int NAME_COLUMN_WIDTH = 15; 
-	const int HEIGHT_COLUMN_WIDTH = 15;
+	const int HEIGHT_COLUMN_WIDTH = 20;
 	const int HOME_COLUMN_WIDTH = 15; 
 
 	//print column headers: 
 	std::cout << std::left << std::setw(NAME_COLUMN_WIDTH) << "NAME";
-	std::cout << std::left << std::setw(HEIGHT_COLUMN_WIDTH) << "HEIGHT (inches)";
+	std::cout << std::left << std::setw(HEIGHT_COLUMN_WIDTH) << "HEIGHT(inches)";
 	std::cout << std::left << std::setw(HOME_COLUMN_WIDTH) << "HOME";
 	std::cout << "\n";
 
 	//print data of interest ("actual data"): 
-	for (VolleyballRecord volleyballRecord : volleyballRecords)
+	//for (int index = 0; index < volleyballRecords.size(); ++index)
+	for (VolleyballRecord volleyballRecord : volleyballRecords) //range-based for loop
 	{
 		std::cout << std::left << std::setw(NAME_COLUMN_WIDTH) << volleyballRecord.playerName;
 		std::cout << std::left << std::setw(HEIGHT_COLUMN_WIDTH) << volleyballRecord.height;
