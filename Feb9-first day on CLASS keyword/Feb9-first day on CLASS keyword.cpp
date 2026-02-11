@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <vector>
 
 
 class Barbarian
@@ -21,6 +22,12 @@ public:
         name = nameGivenInMainFunction; 
         health = healthGivenInMainFunction; 
         isImmortal = isImmortal_fromMainFunction;
+    }
+
+    /*This plays a lil clip from the well-known game Elden Ring (for funsies)*/
+    void roar()
+    {
+        std::system("start https://www.youtube.com/shorts/_SsdA9aANKo");
     }
 
     void setHealth(int healthSpecifiedInMain)
@@ -55,25 +62,26 @@ void print(std::string word)
 int main()
 {
 
-    Barbarian genericBarbarian;
+    std::vector<Barbarian> theBarbarianCrew; 
 
-    int health = 100; 
-    genericBarbarian.setHealth(health);
-
-    genericBarbarian.printBarbarianAttributes(); 
-
+    Barbarian barbarianJoe;
     Barbarian specificBarbarian("NOT Joe", 142, true);
 
+    theBarbarianCrew.push_back(barbarianJoe); 
+    theBarbarianCrew.push_back
+    theBarbarianCrew.push_back(specificBarbarian); 
 
-    genericBarbarian.attack(genericBarbarian); 
+    int health = 100; 
+    barbarianJoe.setHealth(health);
 
-    genericBarbarian.printBarbarianAttributes();
+    barbarianJoe.attack(barbarianJoe); 
 
-    specificBarbarian.printBarbarianAttributes(); 
+    for (int i = 0; i < theBarbarianCrew.size(); ++i)
+    {
+        theBarbarianCrew[i].printBarbarianAttributes(); 
+    }
 
     
-
-
 
     //someBarbarian.name = "adsflksdlkadlkdsa";
 
