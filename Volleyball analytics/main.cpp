@@ -11,7 +11,7 @@
 int main()
 {
 
-    std::string filename = "someVolleyballStats.csv";
+    std::string filename = "C://Users/jojo/Desktop/someVolleyballStats.csv";
 
     //printVolleyballFileContents(filename);
 

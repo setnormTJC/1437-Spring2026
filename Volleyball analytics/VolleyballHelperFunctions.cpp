@@ -9,7 +9,7 @@ void printVolleyballFileContents(std::string filename)
 {
 	std::ifstream fin(filename); 
 
-	if (!fin)
+	if (!fin.is)
 	{
 		std::cout << filename << " not found\n";
 		return; 
