@@ -15,6 +15,8 @@ private:
 	int age; 
 	HairType hairType;
 	std::string name; 
+	bool isAlive; 
+
 
 public: 
 	Person() = delete; 
@@ -26,5 +28,6 @@ public:
 
 	void print(); //this is a function DECLARATION (not a definition -> that goes in Person.cpp)
 
+	void kill(); 
 };
 

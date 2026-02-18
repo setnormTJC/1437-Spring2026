@@ -42,4 +42,9 @@ void Person::print()
 	}
 
 	std::cout << "Person hair type is: " << hairTypeAsString << "\n";
-} 
+}
+void Person::kill()
+{
+	isAlive = false; 
+}
+
