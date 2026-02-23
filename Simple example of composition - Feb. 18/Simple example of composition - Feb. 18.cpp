@@ -10,7 +10,7 @@
 int main()
 {
 	//12.0f inch long leg, 2.0f inch WIDE leg
-	Dog myDog("Doris", "brown", 4, 12.0f, 2.0f, "Australian Cattle Dog");
+	//Dog myDog("Doris", "brown", 4, 12.0f, 2.0f, "Australian Cattle Dog");
 
 
 
