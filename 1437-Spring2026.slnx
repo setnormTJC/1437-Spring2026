@@ -4,6 +4,7 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="Demoing ImageBMPClass/Demoing ImageBMPClass.vcxproj" Id="f3140ef4-9c15-4fbe-9a18-8f7b63a5d4b3" />
+  <Project Path="Demoing INHERITANCE/Demoing INHERITANCE.vcxproj" Id="f8684fec-0dae-410d-83f2-e98c534c423c" />
   <Project Path="FantonThing/FantonThing.vcxproj" Id="bb2d4aac-7f52-4983-85d6-0f59bb56a7bf" />
   <Project Path="Feb16-PersonClass/Feb16-PersonClass.vcxproj" Id="8727115b-ed23-48ea-913e-f3b3a3ea785b" />
   <Project Path="Feb4/Feb4.vcxproj" Id="aa6a4b10-8c53-49d3-9c0c-638b81f9a194" />
