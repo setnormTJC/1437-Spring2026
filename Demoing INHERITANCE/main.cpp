@@ -12,5 +12,4 @@ int main()
 
 	PersonalComputer someoneElsesPC("some CPU name", 1.23, "ASUS something");
 
-
 }

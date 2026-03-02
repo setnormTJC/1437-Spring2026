@@ -6,10 +6,6 @@ name so that hopefully my students actually participate this semester
 #include <iostream>
 #include"StudentThings.h"
 
-//Your name: Jeff ?Elizabeth
-
-
-
 
 int main()
 {
