@@ -99,10 +99,8 @@ void demoDEEPCopy()
 	Animal* pFirstAnimal = new Animal; 
 	pFirstAnimal->name = "Seth Norman"; //note the use of the "arrow operator" (NOT the dot !) 
 
-
 	Animal* pSecondAnimal = new Animal; //new "dynamically allocates" RAM space for our variable (whatever THAT means...)
 	pSecondAnimal->name = "Taylor Swift";
-
 
 	vector<Animal*> pAnimals =
 	{
