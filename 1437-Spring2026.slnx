@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="April1-simple example of operator overloading/April1-simple example of operator overloading.vcxproj" Id="7aa74969-b263-4c7e-a489-ca9231dba511" />
   <Project Path="Demoing ImageBMPClass/Demoing ImageBMPClass.vcxproj" Id="f3140ef4-9c15-4fbe-9a18-8f7b63a5d4b3" />
   <Project Path="Demoing INHERITANCE/Demoing INHERITANCE.vcxproj" Id="f8684fec-0dae-410d-83f2-e98c534c423c" />
   <Project Path="FantonThing/FantonThing.vcxproj" Id="bb2d4aac-7f52-4983-85d6-0f59bb56a7bf" />
