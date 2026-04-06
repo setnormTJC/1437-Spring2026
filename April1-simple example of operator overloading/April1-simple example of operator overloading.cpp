@@ -82,9 +82,8 @@ void printShoeList(const vector<Shoe> shoeList)
 	}
 }
 
-int main()
+void demoSortingCustomObjects()
 {
-
 	Shoe myShoe = { "Altra Olympus V", 11, 139.99 }; //Altra Olympus 5
 
 	Shoe JJsShoe = { "Yeezy's", 10, 59.99 }; //Yeezys! 
@@ -104,19 +103,53 @@ int main()
 		{"Adidas", 6, 45.99} //this is called an "anonymous object" in OOP (C++
 	};
 
-
 	//shoes.at(1).print(); 
-
-
 	//shoes[0].print(); 
 
 	cout << "\n\nBEFORE sorting the shoes:\n";
-	printShoeList(shoes); 
+	printShoeList(shoes);
 
 	std::sort(shoes.begin(), shoes.end()); //sorted by COST
 
 	cout << "\n\nAFTER sorting the shoes:\n";
 	//call print
-	printShoeList(shoes); 
+	printShoeList(shoes);
+}
+
+
+//template
+
+//void print(int a)
+//{
+//	cout << a << "\n";
+//}
+//
+//void print(const std::string& input)
+//{
+//	cout << input << "\n";
+//}
+
+
+/*Template keyword allows for "generic" data types*/
+template<typename TheDataType>
+void print(TheDataType theThang) //thang is an homage to Rick from The Walking Dead
+{
+	cout << theThan << "\n";
+}
+
+int main()
+{
+	//print(5); 
+
+	//print("adsfasdf");
+
+	print("zerba");
+
+	print(1); 
+
+
+	print(1.23);
+
+	print(true); 
 
 }
