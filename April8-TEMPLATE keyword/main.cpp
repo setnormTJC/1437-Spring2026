@@ -79,6 +79,20 @@ int main()
 
 	CustomVector<int> nums({4, 5, 6});
 
+	int desiredLocationToChange = 123123; 
+	int theNewNumber = 8'675'309;
+
+	try
+	{
+		nums.modifyThingAtGivenPosition(desiredLocationToChange, theNewNumber);
+	}
+	catch (const std::exception& theException)
+	{
+		std::cout << "The exception was: " << theException.what() << "\n";
+	}
+
+
+
 	nums.print(); 
 
 }
