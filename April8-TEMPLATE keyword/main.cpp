@@ -61,39 +61,34 @@ ostream& operator<<(ostream& os, const Fruit& fruit)
 
 int main()
 {
-	//print("sdfasfasfd"); //works
-
-	//print(5.1234); //also works
-
-	//print('a'); //yes
-
-	//Fruit myFavoriteFruit("Strawberry", "Red");
-
-	//print(myFavoriteFruit); //uh, oh (spaghetti-oh) -	
-
 
 	auto i = 123; 
-
-
-	//std::vector<int> firstListOfNums = { 1, 2, 3 };
-
+	
 	CustomVector<int> nums({4, 5, 6});
+	CustomVector<int> otherNums({ 7, 8, 9, 10 });
 
-	int desiredLocationToChange = 123123; 
-	int theNewNumber = 8'675'309;
+	//try
+	//{
+	//	nums.modifyThingAtGivenPosition(desiredLocationToChange, theNewNumber);
+	//}
+	//catch (const std::exception& theException)
+	//{
+	//	std::cout << "The exception was: " << theException.what() << "\n";
+	//}
+
+	CustomVector<int> newVector; 
 
 	try
 	{
-		nums.modifyThingAtGivenPosition(desiredLocationToChange, theNewNumber);
+		CustomVector <int> newVector = nums + otherNums; 
 	}
-	catch (const std::exception& theException)
+
+	catch (exception theException)
 	{
-		std::cout << "The exception was: " << theException.what() << "\n";
+		cout << theException.what(); 
 	}
 
-
-
-	nums.print(); 
+	newVector.print(); 
 
 }
 

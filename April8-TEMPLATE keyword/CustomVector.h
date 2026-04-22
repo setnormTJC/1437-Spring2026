@@ -4,20 +4,42 @@
 #include<stdexcept> //"standard exceptions"
 #include <vector>
 
+using namespace std; 
+
+/*this "wraps around" the vector and EXTENDS its functionality (gives it "superpowers"!)*/
 template<typename SomeDataType>
 class CustomVector
 {
 	std::vector<SomeDataType> thangs; //again, a Rick Grimes reference
 
 public: 
-	CustomVector() = delete; 
+	CustomVector() = default; 
 	CustomVector(const std::vector<SomeDataType>& thangs);
 
 	void print() const; //declaration 
 
 	void modifyThingAtGivenPosition(int theGivenPosition, SomeDataType theNewValue);
 
+	/*This guy can THROW! He's needs to audition for the MLB!*/
+	CustomVector operator + (CustomVector rightHandSide)
+	{
+		if (rightHandSide.thangs.size() != this->thangs.size())
+		{
+			throw runtime_error("Array sizes do not match, brotherman");
 
+			//
+		}
+
+		CustomVector sumVector; 
+
+		for (int i = 0; i < thangs.size(); ++i)
+		{
+			sumVector.thangs.push_back(this->thangs.at(i) + rightHandSide.thangs.at(i));
+		}
+
+
+		return sumVector; 
+	}
 };
 
 
